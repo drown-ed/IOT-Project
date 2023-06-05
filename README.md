@@ -7,4 +7,4 @@
 
 ### ASP.NET + MySQL 포트폴리오 사이트
 
-![preview](https://github.com/drown-ed/IOT-Project/blob/main/image/portfolio.gif)
+![preview](https://github.com/drown-ed/IOT-Project/blob/main/image/portfolioweb.gif)
