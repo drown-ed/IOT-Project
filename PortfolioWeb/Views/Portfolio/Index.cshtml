@@ -1,0 +1,22 @@
+﻿@model IEnumerable<PortfolioWeb.Models.PortfolioModel>
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<section class="portfolio-section">
+    <h2 class="section-title">PORTFOLIO</h2>
+
+    <div class="portfolio-wrapper">
+    @foreach (var item in Model)
+    {
+            <figure class="portfolio-item hover-box">
+                <a href="@item.Url"><img src="~/images/@item.FileName" alt="project" class="portfolio-item-img">
+                <figcaption class="portfolio-item-details overlay">
+                    <h5 class="portfolio-item-title"> @item.Title </h5>
+                    <p class="portfolio-item-description"> @item.Description </p>
+                </figcaption>
+                </a>
+            </figure>
+    }
+    </div>
+</section>

@@ -1,0 +1,47 @@
+﻿@model PortfolioWeb.Models.Contact
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<section class="contact-section">
+    <h2 class="section-title">GET IN TOUCH</h2>
+    <p class="mb-4">아래 서식을 이용해 연락을 주시거나 기재된 연락처를 통해 연락 주세요.</p>
+
+    <div class="contact-cards-wrapper">
+        <div class="contact-card">
+            <h6 class="contact-card-title">CALL ME</h6>
+            <p class="contact-card-content">+82 010 9803 3487</p>
+        </div>
+        <div class="contact-card">
+            <h6 class="contact-card-title">Email ME</h6>
+            <p class="contact-card-content">fight1999club@gmail.com</p>
+        </div>
+    </div>
+
+    <form asp-action="WriteContact" name="contactfrm" class="contact-form">
+        <div class="form-group form-group-name">
+            <label class="sr-only">Name</label>
+            <input asp-for="Name" type="text" name="name" id="name" class="form-control" placeholder="NAME">
+        </div>
+        <div class="form-group form-group-email">
+            <label class="sr-only">Email</label>
+            <input asp-for="Email" type="email" name="email" id="email" class="form-control" placeholder="EMAIL">
+        </div>
+        <div class="form-group">
+            <label class="sr-only">Message</label>
+            <textarea asp-for="Message" name="message" id="message" class="form-control" placeholder="MESSAGE" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit-btn">SEND MESSAGE</button>
+    </form>
+
+</section>
+<section class="location-section">
+    <h5 class="section-title">MY LOCATION</h5>
+
+    <div class="map-wrapper embed-responsive embed-responsive-16by9" ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6526.019864148791!2d129.09946429502443!3d35.13142568705405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ec5e8c2a819d%3A0xb48b064925bc71a5!2z67aA7IKw6rSR7Jet7IucIOuCqOq1rCDsnKDsl5Ttj4ntmZTroZw!5e0!3m2!1sko!2skr!4v1685599293574!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="embed-responsive-item"></iframe>
+    </div>
+</section>
